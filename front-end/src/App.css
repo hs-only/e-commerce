@@ -1,0 +1,258 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex-grow: 1;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #656642;
+  color: #fff;
+  padding: 10px;
+}
+
+.register,
+.product {
+  justify-content: center;
+  margin-left: 30%;
+  margin-top: 7%;
+}
+
+.login {
+  margin-left: 30%;
+  margin-top: 100px;
+}
+
+.inputBox {
+  display: block;
+  margin: 25px;
+  padding: 10px;
+  width: 300px;
+  border: none;
+  border-bottom: 2px solid #8e44ad;
+  /* Purple */
+  font-size: 16px;
+  color: #333;
+  background-color: #f9f9f9;
+  transition: border-bottom-color 0.3s, box-shadow 0.3s;
+}
+
+.inputBox:focus {
+  outline: none;
+  border-bottom-color: #3498db;
+  /* Blue */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.appButton {
+  margin: 25px;
+  margin-left: 12%;
+  width: 150px;
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #4CAF50;
+  /* Green */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.nav-ul li {
+  display: inline-block;
+  padding: 10px;
+}
+
+.nav-ul li a {
+  color: #fff;
+  padding: 5px;
+  text-decoration: none;
+
+}
+
+.nav-ul li a:hover {
+  color: chartreuse;
+}
+
+.nav-ul {
+  padding: 5px;
+  margin: 0;
+}
+
+.nav-right {
+  text-align: right;
+}
+
+.invalid-input {
+  color: red;
+  margin-top: -20px;
+  display: block;
+  margin-left: 22px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  background-color: #656642;
+  color: #fff;
+
+}
+
+.logo {
+  width: 50px;
+  float: left;
+  border-radius: 50%;
+  margin-top: 3px;
+  margin-left: 20px;
+}
+
+.product-list {
+  margin: 0 auto;
+  background-color: #7a5458;
+}
+
+h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.search-box {
+  width: 97%;
+  padding: 12px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.search-box:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+}
+
+
+.product-list ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.product-list ul:hover {
+  transform: scale(1.05);
+}
+
+.product-list ul li {
+  display: inline-block;
+  align-items: center;
+  padding: 8px 16px;
+  font-size: 14px;
+  width: 100px;
+}
+
+.product-list ul li:first-child {
+  font-weight: bold;
+  width: 50px;
+}
+
+.product-list ul li:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+.product-list ul li:nth-child(even) {
+  background-color: #e9e9e9;
+}
+
+.product-list .deleteButton {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 8px;
+  transition: background-color 0.3s;
+}
+
+.product-list .updateButton {
+  background-color: #4CAF50;
+  ;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 8px;
+  transition: background-color 0.3s;
+}
+
+.product-list .deleteButton:hover,
+.product-list .updateButton:hover {
+  background-color: #c82333;
+}
+
+.product-list .updateButton a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.profile-box {
+  width: 300px;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-box h2 {
+  margin-bottom: 10px;
+}
+
+.profile-box p {
+  margin: 5px 0;
+}
+
+.Footer-visible {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.Footer-hidden {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
